@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Test</title>
+    <link rel="stylesheet" href="monitor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Practice Test for Science</h1>
+    <form id="quiz-form">
+        <ol>
+            <li>
+                <p>Elements in the same column of the periodic table have:</p>
+                <label>
+                    <input type="radio" name="q11" value="k">Similar valence shell electron configuration
+                </label>
+                <label>
+                    <input type="radio" name="q11" > Same value of highest principal quantum number
+                </label>
+                <label>
+                    <input type="radio" name="q11" >Same number of nucleons
+                </label>
+                <label>
+                    <input type="radio" name="q11" > All of the mentioned
+                </label>
+            </li>
+
+            <li>
+                <p> As we move down a group, electronegativity of elements generally :</p>
+                <label>
+                    <input type="radio" name="q01" >Increases
+                </label>
+                <label>
+                    <input type="radio" name="q01" value="k" >Dercreases
+                </label>
+                <label>
+                    <input type="radio" name="q01" >Increasese ans then decreases
+                </label>
+                <label>
+                    <input type="radio" name="q01" >Decreases and then increases
+                </label>
+            </li>
+
+            <li>
+                <p> How many periods are there in a modern periodic table ?</p>
+                <label>
+                    <input type="radio" name="q1" >5
+                </label>
+                <label>
+                    <input type="radio" name="q1" >6
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="k">7
+                </label>
+                <label>
+                    <input type="radio" name="q1" >8
+                </label>
+            </li>
+
+            <li>
+                <p>Temporary IUPAC systematic symbol for the synthetic element 117 is: </p>
+                <label>
+                    <input type="radio" name="q" > Uuh
+                </label>
+                <label>
+                    <input type="radio" name="q" >Uns
+                </label>
+                <label>
+                    <input type="radio" name="q"value="k" >Uus
+                <label>
+                    <input type="radio" name="q" > Une
+                </label>
+            </li>
+
+            <li>
+                <p>There are seventeen non-metals in the periodic table. Unlike metals in the same period, they have higher:</p>
+                <label>
+                    <input type="radio" name="q50" value="k">Atomic number
+                <label>
+                    <input type="radio" name="q50" > Atomic size
+                </label>
+                <label>
+                    <input type="radio" name="q50" > Electropositivity
+                </label>
+                <label>
+                    <input type="radio" name="q50" > All of the mentioned
+                </label>
+            </li>
+
+            <li>
+                <p>d-block elements generally show multiple oxidation states. An exception to this is :</p>
+                <label>
+                    <input type="radio" name="q4" value="k"> Zinc
+                </label>
+                <label>
+                    <input type="radio" name="q4" >  Mercury
+                </label>
+                <label>
+                    <input type="radio" name="q4" > Copper
+                </label>
+                <label>
+                    <input type="radio" name="q4" > None of the mentioned
+                </label>
+            </li>
+
+            
+
+            <li>
+                
+                    <p> Uranium and Thorium are two important elements in the nuclear power industry. In which block of the modern periodic table are they placed?</p>
+                    <label>
+                        <input type="radio" name="q6"  > s-block
+                    <label>
+                        <input type="radio" name="q6" > p-block
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" > d-block
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" value="k"> f-block
+                    </label>
+                </li>
+
+            <li>
+                <p>  Moving down a group, which of the following properties generally diminishes ?</p>
+                <label>
+                    <input type="radio" name="q7" value="k"> Electronegativity
+                <label>
+                    <input type="radio" name="q7" >Metallic character
+                </label>
+                <label>
+                    <input type="radio" name="q7" >Atomic radius
+                </label>
+                <label>
+                    <input type="radio" name="q7" >Molar mass
+                </label>
+            </li>
+
+            <li>
+                <p>Radon is the sixth member of group 18 of the modern periodic table. Unlike other members of this group, Radon :</p>
+                <label>
+                    <input type="radio" name="q9" > is solid near room temperature
+                <label>
+                    <input type="radio" name="q9" value="k"> is radioactive
+                </label>
+                <label>
+                    <input type="radio" name="q9" > possess high chemical reactivity
+                </label>
+                <label>
+                    <input type="radio" name="q9" > all of the mentioned
+                </label>
+            </li>
+
+            <li>
+                <p>Ionization energy decreases down the group. It is the energy required by an isolated gaseous atom to form an anion. </p>
+                <label>
+                    <input type="radio" name="q10" > True
+                <label>
+                    <input type="radio" name="q10" value="k"> False
+                </label>
+                <label>
+                    <input type="radio" name="q10" >Sometimes True Sometimes False
+                </label>
+                <label>
+                    <input type="radio" name="q10" >none of the above
+                </label>
+            </li>
+
+            <!-- Repeat similar structure for other questions -->
+        </ol>
+        <button class="btn" type="submit">Submit</button>
+    </form>
+
+    <div class="result">
+        <h2>Test Result</h2>
+        <svg id="progress-circle" width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#ccc"
+                stroke-width="10"
+                fill="transparent"
+            />
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#007bff"
+                stroke-width="10"
+                fill="transparent"
+                stroke-dasharray="251.2"
+                stroke-dashoffset="251.2"
+                id="progress"
+            />
+        </svg>
+        <p>Progress: <span id="progress-text">0%</span></p>
+    </div>
+  
+    <script>
+        // JavaScript for monitoring test progress (simplified)
+        const form = document.getElementById('quiz-form');
+        const progressCircle = document.getElementById('progress-circle');
+        const progress = document.getElementById('progress');
+        const progressText = document.getElementById('progress-text');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const answers = new FormData(this);
+            const totalQuestions = 10; // Total number of questions
+    
+            let score = 0;
+            for (const answer of answers.values()) {
+                if (answer === 'k') {
+                    score++;
+                }
+                // Add similar checks for other questions
+            }
+    
+            const percentage = (score / totalQuestions) * 100;
+            const dashoffset = 251.2 - (251.2 * percentage) / 100;
+            progress.style.strokeDashoffset = dashoffset;
+            progressText.textContent = `${percentage.toFixed(2)}%`;
+        });
+
+        $(document).ready(function(){
+            $(".result").hide();
+          $("button").click(function(){
+                $(".result").show();
+            });
+        });
+    </script>
+</body>
+</html>
