@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Test</title>
+    <link rel="stylesheet" href="monitor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Practice Test for English</h1>
+    <form id="quiz-form">
+        <ol type="1">
+            <li>
+                <p>Courage becomes :</p>
+                <label>
+                    <input type="radio" name="q1" value="k"> Courageous
+                </label>
+                <label>
+                    <input type="radio" name="q1" > Couragous
+                </label>
+                <label>
+                    <input type="radio" name="q1" > Courageable
+                </label>
+                <label>
+                    <input type="radio" name="q1" > Couragable
+                </label>
+            </li>
+
+            <li>
+                <p>A monosyllabic word with one vowel cannot end in “c”.</p>
+                <label>
+                    <input type="radio" name="q2" > True
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="k"> False
+                </label>
+                <label>
+                    <input type="radio" name="q2"> Can't Predict
+                </label>
+                <label>
+                    <input type="radio" name="q2"> Can't Predict
+                </label>
+                
+            </li> 
+
+            <li>
+                <p>Rot becomes _____ and pen becomes ______.</p>
+                <label>
+                    <input type="radio" name="q3" > roted, pened
+                </label>
+                <label>
+                    <input type="radio" name="q3" > rotting, pened
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="k"> rotting, penned
+                </label>
+                <label>
+                    <input type="radio" name="q3" > rotted, penned
+                </label>
+            </li>
+
+            <li>
+                <p>A word which is monosyllabic and has one vowel must end with:</p>
+                <label>
+                    <input type="radio" name="q4" > mm
+                </label>
+                <label>
+                    <input type="radio" name="q4" > p
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="k">ll
+                </label>
+                <label>
+                    <input type="radio" name="q4" > t
+                </label>
+            </li>
+
+            <li>
+                <p>A monosyllabic word containing two vowel letters ends with:</p>
+                <label>
+                    <input type="radio" name="q5" value="k"> k
+                <label>
+                    <input type="radio" name="q5" > c
+                </label>
+                <label>
+                    <input type="radio" name="q5" >ck
+                </label>
+                <label>
+                    <input type="radio" name="q5" > kc
+                </label>
+            </li>
+
+            <li>  
+                    <p>A monosyllabic word containing two vowel letters ends with:</p>
+                    <label>
+                        <input type="radio" name="q6" > Allign
+                    <label>
+                        <input type="radio" name="q6" value="k" > Align
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" >Alignn
+                    </label>
+                    <label>
+                        <input type="radio" name="q6" >Alline
+                    </label>
+            </li>
+
+            <li>
+                <p>Choose the correct statement:</p>
+                <label>
+                    <input type="radio" name="q7" > I asked him if he was leaving.
+                <label>
+                    <input type="radio" name="q7" value="k"> I asked him whether he was leaving.
+                </label>
+                <label>
+                    <input type="radio" name="q7" > I asked him that if he was leaving.
+                </label>
+                <label>
+                    <input type="radio" name="q7" >I asked him weather he was leaving.
+                </label>
+            </li>
+
+            <li>
+                <p>What is opposite of small?</p>
+                <label>
+                    <input type="radio" name="q9" value="k"> Large
+                <label>
+                    <input type="radio" name="q9" > Little
+                </label>
+                <label>
+                    <input type="radio" name="q9" >Tiny
+                </label>
+                <label>
+                    <input type="radio" name="q9" > Both A & B
+                </label>
+            </li>
+
+            <div id="div-color"><li>
+                <p>Choose the correct statement:</p>
+                <label>
+                    <input type="radio" name="q10" > The boy gave his examination.
+                <label>
+                    <input type="radio" name="q10" value="k"> The boy took his examination.
+                </label>
+                <label>
+                    <input type="radio" name="q10" >The teacher took his examination.
+                </label>
+                <label>
+                    <input type="radio" name="q10" > The boy gave away the examination.
+                </label>
+            </li></div>
+
+            <div id="div-color"><li>  
+                <p>A monosyllabic word containing two vowel letters ends with:</p>
+                <label>
+                    <input type="radio" name="q6" > Allign
+                <label>
+                    <input type="radio" name="q6" value="k" > Align
+                </label>
+                <label>
+                    <input type="radio" name="q6" >Alignn
+                </label>
+                <label>
+                    <input type="radio" name="q6" >Alline
+                </label>
+            </li></div>
+
+            <!-- Repeat similar structure for other questions -->
+        </ol>
+        <button class="btn" type="submit" >Submit</button>
+    </form>
+
+    <div class="result">
+        <h2>Test Result</h2>
+        <svg id="progress-circle" width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#ccc"
+                stroke-width="10"
+                fill="transparent"
+            />
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#007bff"
+                stroke-width="10"
+                fill="transparent"
+                stroke-dasharray="251.2"
+                stroke-dashoffset="251.2"
+                id="progress"
+            />
+        </svg>
+        <p>Progress: <span id="progress-text">0%</span></p>
+    </div>
+  
+    <script>
+        // JavaScript for monitoring test progress (simplified)
+        const form = document.getElementById('quiz-form');
+        const progressCircle = document.getElementById('progress-circle');
+        const progress = document.getElementById('progress');
+        const progressText = document.getElementById('progress-text');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const answers = new FormData(this);
+            const totalQuestions = 10; // Total number of questions
+    
+            let score = 0;
+            for (const answer of answers.values()) {
+                if (answer === 'k') {
+                    score++;
+                }
+                // Add similar checks for other questions
+            }
+    
+            const percentage = (score / totalQuestions) * 100;
+            const dashoffset = 251.2 - (251.2 * percentage) / 100;
+            progress.style.strokeDashoffset = dashoffset;
+            progressText.textContent = `${percentage.toFixed(2)}%`;
+        });
+
+        $(document).ready(function(){
+            $(".result").hide();
+          $("button").click(function(){
+                $(".result").show();
+            });
+        });
+    </script>
+    
+</body>
+</html>

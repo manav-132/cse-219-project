@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Test</title>
+    <link rel="stylesheet" href="monitor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Practice Test for Communication Skills</h1>
+    <form id="quiz-form">
+        <ol>
+            <li>
+                <p>________ means communication without words.</p>
+                <label>
+                    <input type="radio" name="q1" > Object communication
+                </label>
+                <label>
+                    <input type="radio" name="q1" > Written communication
+                </label>
+                <label>
+                    <input type="radio" name="q1" > Oral communication
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="k"> Non- verbal communication
+                </label>
+            </li>
+
+            <li>
+                <p>____________ describes all forms of human communication that are not verbal.</p>
+                <label>
+                    <input type="radio" name="q2" >  prosody
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="k" > para language
+                </label>
+                <label>
+                    <input type="radio" name="q2" >  haptics 
+                </label>
+                <label>
+                    <input type="radio" name="q2" > vocalics
+                </label>
+            </li>
+
+            <li>
+                <p> Effective Communication is considered as a kind of __________ skill: </p>
+                <label>
+                    <input type="radio" name="q3" >   Hard
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="k"> Soft
+                </label>
+                <label>
+                    <input type="radio" name="q3" >  Rough
+                </label>
+                <label>
+                    <input type="radio" name="q3" > Short
+                </label>
+            </li>
+
+            <li>
+                <p>Communication usually experiences difficulty in ensuring that the message is: </p>
+                <label>
+                    <input type="radio" name="q4" value="k"> conveyed precisely, understood correctly and as desired
+                </label>
+                <label>
+                    <input type="radio" name="q4" > conveyed precisely
+                </label>
+                <label>
+                    <input type="radio" name="q4" > understood correctly
+                </label>
+                <label>
+                    <input type="radio" name="q4" > acted upon promptly and as desired
+                </label>
+            </li>
+
+            <li>
+                <p>_____ is the person who decodes and interprets the message.</p>
+                <label>
+                    <input type="radio" name="q5" >  Sender
+                <label>
+                    <input type="radio" name="q5" value="k"> Receiver
+                </label>
+                <label>
+                    <input type="radio" name="q5" > Channel
+                </label>
+                <label>
+                    <input type="radio" name="q5" > Source
+                </label>
+            </li>
+
+            <li>
+                <p> ______ context refers to the similarity of backgrounds between the sender and the receiver. </p>
+                <label>
+                    <input type="radio" name="q6" >  Physical
+                </label>
+                <label>
+                    <input type="radio" name="q6" > Social
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="k"> Cultural
+                </label>
+                <label>
+                    <input type="radio" name="q6" > Chronological
+                </label>
+            </li>
+
+            
+
+            <li>
+                
+                    <p> Which of the following indicates the correct sequence of the elements of communication in the communication process? </p>
+                    <label>
+                        <input type="radio" name="q7" > Sender, Receiver, Channel, Message, Feedback
+                    <label>
+                        <input type="radio" name="q7" > Receiver, Feedback, Sender, Message, Channel
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" >Sender, Channel, Message, feedback, Receiver
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" value="k">Sender, Message, Channel, Receiver, Feedback
+                    </label>
+                </li>
+
+            <li>
+                <p> What is the purpose of communication?</p>
+                <label>
+                    <input type="radio" name="q8" > Inform (tell someone about something)
+                <label>
+                    <input type="radio" name="q8" > Influence (get someone to do something you want)
+                </label>
+                <label>
+                    <input type="radio" name="q8" > Share thoughts, ideas, feelings
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="k">  All of the above
+                </label>
+            </li>
+
+            <li>
+                <p>The mode of communication that involves a single source transmitting information to a large number of receivers simultaneously, is called:</p>
+                <label>
+                    <input type="radio" name="q9" > Group Communication
+                <label>
+                    <input type="radio" name="q9" value="k"> Mass Communication
+                </label>
+                <label>
+                    <input type="radio" name="q9" > Intrapersonal Communication
+                </label>
+                <label>
+                    <input type="radio" name="q9" > Interpersonal Communication
+                </label>
+            </li>
+
+            <li>
+                <p> Which of these should not be avoided for effective communication? </p>
+                <label>
+                    <input type="radio" name="q10" >  Noise
+                <label>
+                    <input type="radio" name="q10" value="k"> Planning
+                </label>
+                <label>
+                    <input type="radio" name="q10" > Semantic problems
+                </label>
+                <label>
+                    <input type="radio" name="q10" > Wrong assumptions
+                </label>
+            </li>
+
+            <!-- Repeat similar structure for other questions -->
+        </ol>
+        
+        <button id="btn1" class="btn" type="submit" onclick="change(this,'#1fa499')">Submit</button>
+        <button id="btn2" class="btn" type="reset" >Reset</button>
+      
+        
+    </form>
+
+    <div class="result">
+        <h2>Test Result</h2>
+        <svg id="progress-circle" width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#ccc"
+                stroke-width="10"
+                fill="transparent"
+            />
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#007bff"
+                stroke-width="10"
+                fill="transparent"
+                stroke-dasharray="251.2"
+                stroke-dashoffset="251.2"
+                id="progress"
+            />
+        </svg>
+        <p>Progress: <span id="progress-text">0%</span></p>
+    </div>
+  
+    <script>
+
+        function change(element, newColor) {
+            element.style.backgroundColor = newColor;
+        }
+
+        // JavaScript for monitoring test progress (simplified)
+        const form = document.getElementById('quiz-form');
+        const progressCircle = document.getElementById('progress-circle');
+        const progress = document.getElementById('progress');
+        const progressText = document.getElementById('progress-text');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const answers = new FormData(this);
+            const totalQuestions = 10; // Total number of questions
+    
+            let score = 0;
+            for (const answer of answers.values()) {
+                if (answer === 'k') {
+                    score++;
+                }
+                // Add similar checks for other questions
+            }
+    
+            const percentage = (score / totalQuestions) * 100;
+            const dashoffset = 251.2 - (251.2 * percentage) / 100;
+            progress.style.strokeDashoffset = dashoffset;
+            progressText.textContent = `${percentage.toFixed(2)}%`;
+        });
+
+        $(document).ready(function(){
+            $(".result").hide();
+            $("#btn1").click(function(){
+                $(".result").show();
+            });
+            $("#btn2").click(function(){
+                $(".result").hide();
+            });
+        });
+    </script>
+</body>
+</html>

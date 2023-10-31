@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Test</title>
+    <link rel="stylesheet" href="monitor.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Practice Test for Mathematics</h1>
+    <form id="quiz-form">
+        <ol>
+            <li>
+                <p>If sin x=0 then x :</p>
+                <label>
+                    <input type="radio" name="q1" value="k">  nπ
+                </label>
+                <label>
+                    <input type="radio" name="q1" >(2n+1) π/2
+                </label>
+                <label>
+                    <input type="radio" name="q1" >  (n+1) π
+                </label>
+                <label>
+                    <input type="radio" name="q1" > nπ/2
+                </label>
+            </li>
+
+            <li>
+                <p>If cos x=0 then x = </p>
+                <label>
+                    <input type="radio" name="q2" >  nπ
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="k" >(2n+1) π/2
+                </label>
+                <label>
+                    <input type="radio" name="q2" >  (n+1) π
+                </label>
+                <label>
+                    <input type="radio" name="q2" > nπ/2
+                </label>
+            </li>
+
+            <li>
+                <p> If tan x = 0 then x = </p>
+                <label>
+                    <input type="radio" name="q3" value="k">  nπ
+                </label>
+                <label>
+                    <input type="radio" name="q3" >(2n+1) π/2
+                </label>
+                <label>
+                    <input type="radio" name="q3" >  (n+1) π
+                </label>
+                <label>
+                    <input type="radio" name="q3" > nπ/2
+                </label>
+            </li>
+
+            <li>
+                <p>1-sin245° = </p>
+                <label>
+                    <input type="radio" name="q4" value="k"> 1/2
+                </label>
+                <label>
+                    <input type="radio" name="q4" > 1
+                </label>
+                <label>
+                    <input type="radio" name="q4" >0
+                </label>
+                <label>
+                    <input type="radio" name="q4" > √3 /2
+                </label>
+            </li>
+
+            <li>
+                <p>1-cos<sup>2</sup>x= </p>
+                <label>
+                    <input type="radio" name="q5" > sinx
+                <label>
+                    <input type="radio" name="q5" > cosx
+                </label>
+                <label>
+                    <input type="radio" name="q5" >cos2x
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="k"> sin<sup>2</sup>x
+                </label>
+            </li>
+
+            <li>
+                <p> 1-sec2x= </p>
+                <label>
+                    <input type="radio" name="q6" > cot<sup>2</sup>x
+                </label>
+                <label>
+                    <input type="radio" name="q6" > tan<sup>2</sup>x
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="k">-tan<sup>2</sup>x
+                </label>
+                <label>
+                    <input type="radio" name="q6" > -cot<sup>2</sup>x
+                </label>
+            </li>
+
+            
+
+            <li>
+                
+                    <p> 1+ tan<sup>2</sup>x= </p>
+                    <label>
+                        <input type="radio" name="q7" value="k" > sec<sup>2</sup>x
+                    <label>
+                        <input type="radio" name="q7" > -sec<sup>2</sup>x
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" >cosec<sup>2</sup>x
+                    </label>
+                    <label>
+                        <input type="radio" name="q7" >-cosec<sup>2</sup>x
+                    </label>
+                </li>
+
+            <li>
+                <p> tan x is not defined for :</p>
+                <label>
+                    <input type="radio" name="q8" > 0
+                <label>
+                    <input type="radio" name="q8" > nπ/2
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="k">  (2n+1) π/2
+                </label>
+                <label>
+                    <input type="radio" name="q8" >nπ
+                </label>
+            </li>
+
+            <li>
+                <p>sin (-45°) =</p>
+                <label>
+                    <input type="radio" name="q9" > 1
+                <label>
+                    <input type="radio" name="q9" > -1
+                </label>
+                <label>
+                    <input type="radio" name="q9" >1/√2
+                </label>
+                <label>
+                    <input type="radio" name="q9" value="k"> -1/√2
+                </label>
+            </li>
+
+            <li>
+                <p> cos (-60°) = </p>
+                <label>
+                    <input type="radio" name="q10" >  -√3/2
+                <label>
+                    <input type="radio" name="q10" value="k">1/2
+                </label>
+                <label>
+                    <input type="radio" name="q10" >√3/2
+                </label>
+                <label>
+                    <input type="radio" name="q10" >-1/2
+                </label>
+            </li>
+
+            <!-- Repeat similar structure for other questions -->
+        </ol>
+        
+        <button id="btn1" class="btn" type="submit" onclick="change(this,'#1fa499')">Submit</button>
+        <button id="btn2" class="btn" type="reset" >Reset</button>
+      
+        
+    </form>
+
+    <div class="result">
+        <h2>Test Result</h2>
+        <svg id="progress-circle" width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#ccc"
+                stroke-width="10"
+                fill="transparent"
+            />
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#007bff"
+                stroke-width="10"
+                fill="transparent"
+                stroke-dasharray="251.2"
+                stroke-dashoffset="251.2"
+                id="progress"
+            />
+        </svg>
+        <p>Progress: <span id="progress-text">0%</span></p>
+    </div>
+  
+    <script>
+
+        function change(element, newColor) {
+            element.style.backgroundColor = newColor;
+        }
+
+        // JavaScript for monitoring test progress (simplified)
+        const form = document.getElementById('quiz-form');
+        const progressCircle = document.getElementById('progress-circle');
+        const progress = document.getElementById('progress');
+        const progressText = document.getElementById('progress-text');
+    
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const answers = new FormData(this);
+            const totalQuestions = 10; // Total number of questions
+    
+            let score = 0;
+            for (const answer of answers.values()) {
+                if (answer === 'k') {
+                    score++;
+                }
+                // Add similar checks for other questions
+            }
+    
+            const percentage = (score / totalQuestions) * 100;
+            const dashoffset = 251.2 - (251.2 * percentage) / 100;
+            progress.style.strokeDashoffset = dashoffset;
+            progressText.textContent = `${percentage.toFixed(2)}%`;
+        });
+
+        $(document).ready(function(){
+            $(".result").hide();
+            $("#btn1").click(function(){
+                $(".result").show();
+            });
+            $("#btn2").click(function(){
+                $(".result").hide();
+            });
+        });
+    </script>
+</body>
+</html>

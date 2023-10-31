@@ -1,0 +1,97 @@
+body {
+    background-color: #aed1f0c9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ol {
+    padding-left: 50px;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+}
+
+button.btn {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 153, 0);
+    border: 4px;
+    height: 40px;
+    width: 100px;
+    margin-left: 700px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button.reset-btn {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 153, 0);
+    border: 4px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.result {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.progress-bar {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.progress {
+    height: 30px;
+    background-color: #4caf50;
+    width: 0;
+}
+#cr{
+    height: 20px;
+    width: 110px;
+    border: 5px;
+    margin-left: 1340px;
+    border-color: rgb(28, 68, 107);
+    background-color: white;
+    border-radius: 4px;
+}
+li{
+    border: 5px solid rgb(61, 114, 160);
+    border-color: rgb(69, 137, 173);
+}
+#cr1{
+    height: 20px;
+    width: 110px;
+    border: 5px;
+    margin-left: 1340px;
+    border-color: rgb(28, 68, 107);
+    background-color: white;
+    border-radius:50px;
+    text-align: center;
+}
